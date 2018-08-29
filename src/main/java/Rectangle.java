@@ -7,6 +7,17 @@ public class Rectangle extends Shape{
         this.length = 1.0;
     }
 
+    public Rectangle(double width, double length) {
+        this.width = width;
+        this.length = length;
+    }
+
+    public Rectangle(String color, boolean filled, double width, double length) {
+        super(color, filled);
+        this.width = width;
+        this.length = length;
+    }
+
     public double getLength() {
         return length;
     }
